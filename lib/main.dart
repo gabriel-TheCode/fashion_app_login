@@ -97,6 +97,7 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   height: 10,
                 ),
+
                 MaterialButton(
                     onPressed: () {
                       Navigator.push(context,
@@ -112,10 +113,24 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     )),
+
+                SizedBox(
+                  height: 20,
+                ),
+
+                Center(
+                    child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        child: Text(
+                          "Don't have an account? Sign up",
+                          style: TextStyle(fontSize: 18, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ))),
+
                 Expanded(child: Container()),
                 Container(
                   height: 50,
-                  margin: EdgeInsets.only(bottom: 100),
+                  margin: EdgeInsets.only(bottom: 30, top: 50),
                   decoration:
                       BoxDecoration(border: Border.all(color: Colors.white)),
                   child: Row(
